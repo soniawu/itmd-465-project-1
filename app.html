@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <title>ITMD-465 project 1</title>
+  </head>
+
+  <body>
+    <h1 id="page-heading">ITMD-465 Project-1 by Sonia Wu, swu52@hawk.iit.edu</h1>
+    <section id="list-wraper">
+      <h1 id="note-list-header">Note List</h1>
+      <div id="note-list"></div>
+      <h2 id="list-count-msg"><h2>
+      <button id="add-btn" type="submit" name="add-btn">Add a Note</button>
+    </section>
+    
+    <section id="selected-note" >
+      <form id="note-form" class="hide">
+        <h2 id="form-heading"></h2>
+        <label>
+          <span class="input-label-span">Author</span>
+          <input type="text" name="author" id="author" />
+        </label>
+        <label>
+        <span class="input-label-span">Subject</span>
+        <input type="text" name="subject" id="subject" />
+        </label>
+        <label>
+        <span class="input-label-span">Message</span>
+        <input type="text" name="message" size="50" id="message" />
+        </label>
+        <input type="hidden" name="key"  id="key" />
+        <input type="submit" name="upd-btn" id="upd-btn" value="Update Note"/>
+        <input type="submit" name="del-btn" id="del-btn" value="Delete Note"/>
+        <input type="submit" name="sav-btn" id="sav-btn" value="Save Note"/>
+        <input type="submit" name="cnl-btn" id="cnl-btn" value="Cancel"/>
+      </form>
+      <p id="reply-msg"></p>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/noteHandler.js"></script>
+
+  </body>
+</html>
